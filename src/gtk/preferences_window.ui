@@ -13,6 +13,7 @@
             <child>
               <object class="AdwSwitchRow" id="dark_theme_switch">
                 <property name="title" translatable="yes">Dark Theme</property>
+                <property name="use_underline">True</property>
               </object>
             </child>
           </object>
@@ -23,7 +24,7 @@
             <property name="visible">True</property>
             <child>
               <object class="AdwExpanderRow" id="notify_of_idle_expander">
-                <property name="title" translatable="yes">_Notify of Idle</property>
+                <property name="title" translatable="yes" comments="Letters marked with an underscore are access keys (https://developer.gnome.org/hig/guidelines/keyboard.html#access-keys) which should be unique for each page">_Notify of Idle</property>
                 <property name="subtitle" translatable="yes">(GNOME Only)</property>
                 <property name="show_enable_switch">True</property>
                 <property name="use_underline">True</property>
