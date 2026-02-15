@@ -24,7 +24,7 @@ mod timer_tests {
         let expected = (
             "Check".to_string(),
             "Proj".to_string(),
-            "Bond james bond #007".to_string(),
+            "007 #bond james bond".to_string(),
             10.0,
         );
         assert_eq!(split_task_input(input), expected);
