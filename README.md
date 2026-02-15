@@ -76,4 +76,6 @@ This project is licensed under the GNU General Public License v3.0. See the [LIC
 
 ### Author
 
-This project is created and maintained by [Ricky Kresslein](https://kressle.in) under [Unobserved](https://unobserved.io). More information at [Furtherance.app](https://furtherance.app).
+This project is created and maintained by [Ricky Kresslein](https://kressle.in).
+
+_Note: Versions follow Year.ISO-Week format_
