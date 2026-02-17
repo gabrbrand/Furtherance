@@ -83,6 +83,9 @@ use image::ImageFormat;
 use iced::window::settings::PlatformSpecific;
 
 fn main() -> iced::Result {
+    // Force iGPU (not necessary for EdgeCrafter to use dGPU)
+    unsafe { std::env::set_var("WGPU_POWER_PREF", "low") };
+
     let window_icon = iced::window::icon::from_file_data(
         include_bytes!("../assets/icon/32x32@2x.png"),
         Some(ImageFormat::Png),
