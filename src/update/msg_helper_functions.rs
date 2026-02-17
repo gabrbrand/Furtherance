@@ -584,8 +584,8 @@ pub fn detect_wayland() -> bool {
     #[cfg(target_os = "linux")]
     if let Ok(true) = env::var("XDG_SESSION_TYPE").map(|v| v == "wayland") {
         return true;
-    } else if let Ok(_) = env::var("WAYLAND_DISPLAY") {
-        return Path::new(&format!("/run/user/{}/wayland-0", get_current_uid())).exists();
+    } else if let Ok(wayland_display) = env::var("WAYLAND_DISPLAY") {
+        return Path::new(&format!("/run/user/{}/{}", get_current_uid(), wayland_display)).exists();
     }
 
     false
